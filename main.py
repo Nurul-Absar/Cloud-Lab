@@ -25,7 +25,13 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     """Return a friendly HTTP greeting."""
-    return 'Nurul Absar'
+    a = []
+
+    for e in range(1,20,1):
+        if (e%2) == 0:
+            a.append(e)
+    return a
+
 
 
 if __name__ == '__main__':
